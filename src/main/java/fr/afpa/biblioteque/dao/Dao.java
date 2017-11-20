@@ -15,7 +15,7 @@ import fr.afpa.biblioteque.model.*;
 
 public class Dao implements IDao {
 
-	private String url = "jdbc:mysql://localhost:3306/biblioteque";
+	private String url = "jdbc:mysql://192.168.1.150:3306/biblioteque";
 	private String login = "root";
 	private String passwd = "SuperAFPA34";
 	private Connection connect = null;
@@ -211,7 +211,6 @@ public class Dao implements IDao {
 
 	}
 
-	@Override
 	public void supEmprunteur(Utilisateur emprunteur) {
 		try {
 			// Récupération de la connexion
@@ -230,7 +229,6 @@ public class Dao implements IDao {
 
 	}
 
-	@Override
 	public ArrayList<Utilisateur> afficherListeEmprunteur() {
 		ArrayList<Utilisateur> listeEmprunteur = new ArrayList<Utilisateur>();
 		try {
@@ -366,7 +364,6 @@ public class Dao implements IDao {
 		}
 	}
 
-	@Override
 	public ArrayList<Auteur> afficherListeAuteur() {
 		ArrayList<Auteur> listeAuteur = new ArrayList<Auteur>();
 		try {
@@ -395,7 +392,6 @@ public class Dao implements IDao {
 
 	}
 
-	@Override
 	public void ModifyEmprunteur(Utilisateur emprunteur) {
 		try {
 			// Récupération de la connexion
