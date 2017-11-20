@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>BibliotequeVersionWeb</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>ServletPages</servlet-name>
+		<servlet-class>fr.afpa.biblioteque.web.ServletPages</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletBook</servlet-name>
+		<servlet-class>fr.afpa.biblioteque.web.ServletBook</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletAuthor</servlet-name>
+		<servlet-class>fr.afpa.biblioteque.web.ServletAuthor</servlet-class>
+	</servlet>
+		<servlet>
+		<servlet-name>ServletUsers</servlet-name>
+		<servlet-class>fr.afpa.biblioteque.web.ServletUsers</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletPages</servlet-name>
+		<url-pattern>/accueil</url-pattern>
+		<url-pattern>/recherche</url-pattern>
+		<url-pattern>/utilisateurs</url-pattern>
+		<url-pattern>/livres</url-pattern>
+		<url-pattern>/auteurs</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ServletBook</servlet-name>
+		<url-pattern>/displayListBook</url-pattern>
+		<url-pattern>/deleteBook</url-pattern>
+		<url-pattern>/selected</url-pattern>
+		<url-pattern>/validateAddBook</url-pattern>
+		<url-pattern>/modifyBook</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ServletAuthor</servlet-name>
+		<url-pattern>/displayListAuthor</url-pattern>
+		<url-pattern>/addAuthor</url-pattern>
+		<url-pattern>/validateAddAuthor</url-pattern>
+		<url-pattern>/deleteAuthor</url-pattern>
+		<url-pattern>/addBook</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ServletUsers</servlet-name>
+		<url-pattern>/displayListUsers</url-pattern>
+		<url-pattern>/displayAddUser</url-pattern>
+		<url-pattern>/validateAddUser</url-pattern>
+		<url-pattern>/deleteUser</url-pattern>
+		<url-pattern>/displayModifyUser</url-pattern>
+		<url-pattern>/validateModifyUser</url-pattern>
+	</servlet-mapping>
+
+</web-app>

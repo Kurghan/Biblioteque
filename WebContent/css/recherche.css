@@ -1,0 +1,133 @@
+@charset "ISO-8859-1";
+
+#general {
+	margin: 0 auto;
+	width: 800px;
+	height: 610px;
+	margin-top: 10%;
+	background-color: silver;
+}
+
+.btn {
+	width: 100px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+#RRapide {
+	width: 230px;
+	height: 100px;
+	float: left;
+}
+
+#rechercheRapide {
+	float: none;
+	width: 300px;
+	height: 100px;
+}
+
+.groupBoutons {
+	margin-top: 5px;
+	float: left;
+	width: 220px;
+	height: auto;
+	float: left;
+}
+
+#recherchePar {
+	margin-left: 20px;
+	width: 50px;
+	float: left;
+}
+
+#inputRechercheRapide {
+	margin-top: 10px;
+	margin-right: -5;
+	height: 15px;
+	width: 245px;
+}
+
+#listeRRapide {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+#resultatRRapide {
+	display: flex;
+	width: 250px;
+	height: 170px;
+}
+
+.legend {
+	text-align: center;
+}
+
+#resultatRecherche {
+	float: right;
+	margin-top: 5px;
+	border-style: solid;
+	border-width: 1px;
+	height: 400px;
+	width: 490px;
+}
+
+#blocRecherche {
+	float: right;
+	height: 200px;
+	width: 490px;
+}
+
+body {
+	background-image: url('../img/biblio1.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+#listeRecherche {
+	float:right;
+	margin-right: 30%;
+	margin-top: 15px;
+	width: 155px;
+}
+
+#blocTxtRecherche{
+	float: left;
+	width: 240px;
+	height: 200px;
+	text-align: right;
+}
+
+#blocTextRecherche{
+	float: right;
+	width: 230px;
+	height: 200px;
+	text-align: left;
+}
+
+.textRecherche {
+	float:right;
+	margin-right: 30%;
+	width: 150px;
+	margin-top: 5px;
+}
+
+#btnRechercher{
+	margin-left: 20%;
+	margin-top: 20px;
+}
+
+#txtISBN{
+	margin-top: 42px;
+}
+
+#txtTitre{
+	margin-top: -10px;
+}
+
+#txtSousTitre{
+	margin-top: -8px;
+}
+
+#txtAuteur{
+	margin-top: -8px;
+}

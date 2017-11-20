@@ -1,0 +1,147 @@
+@charset "ISO-8859-1";
+
+#general {
+	margin: 0 auto;
+	width: 800px;
+	height: 610px;
+	margin-top: 10%;
+	background-color: silver;
+}
+
+.btn {
+	width: 100px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+.btnUsers {
+	float: right;
+	width: 90px;
+	height: 20px;
+	margin-left: 10px;
+}
+
+#RRapide {
+	width: 230px;
+	height: 100px;
+	float: left;
+}
+
+#rechercheRapide {
+	float: none;
+	width: 300px;
+	height: 100px;
+}
+
+.groupBoutons {
+	margin-top: 5px;
+	width: 150px;
+	height: auto;
+	float: left;
+}
+
+.groupBoutonsUsers {
+	margin-top: 40px;
+	width: 150px;
+	height: auto;
+	float: left;
+}
+
+#recherchePar {
+	margin-left: 20px;
+	width: 50px;
+	float: left;
+}
+
+#inputRechercheRapide {
+	margin-top: 10px;
+	margin-right: -5;
+	height: 15px;
+	width: 245px;
+}
+
+#listeRRapide {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+#resultatRRapide {
+	display: flex;
+	width: 250px;
+	height: 170px;
+}
+
+.legend {
+	text-align: center;
+}
+
+#resultatRecherche {
+	float: right;
+	margin-top: 40px;
+	border-style: solid;
+	border-width: 1px;
+	height: 560px;
+	width: 490px;
+}
+
+#blocRecherche {
+	float: right;
+	height: 200px;
+	width: 490px;
+}
+
+body {
+	background-image: url('../img/biblio1.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+#listeRecherche {
+	float: right;
+	margin-right: 30%;
+	margin-top: 15px;
+	width: 155px;
+}
+
+#blocTxtRecherche {
+	float: left;
+	width: 240px;
+	height: 200px;
+	text-align: right;
+}
+
+#rechercheInListe {
+	text-align: center;
+	width: 489px;
+	border-style: solid;
+	border-width: 1px;
+	height: 20px;
+}
+
+#inputRechercheInListe {
+	margin-left: 190px;
+	height: 12px;
+	margin-right: 20px;
+	margin-top: -10px;
+}
+
+table, td, th {
+	text-align:center;
+    border: 1px solid black;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	height: 50px;
+}
+
+#txtId{
+	float : left;
+	visibility: hidden;
+	height: 10px;
+	width: 10px;
+}

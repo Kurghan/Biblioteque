@@ -1,0 +1,79 @@
+@charset "ISO-8859-1";
+
+#general {
+	margin: 0 auto;
+	width: 800px;
+	height: 610px;
+	margin-top: 10%;
+	background-color:silver;
+}
+
+.btn {
+	width: 100px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+#RRapide {
+	width: 230px;
+	height: 100px;
+	float: left;
+}
+
+#rechercheRapide {
+	float: none;
+	width: 300px;
+	height: 100px;
+}
+
+.groupBoutons {
+	margin-top: 5px;
+	float: left;
+	width: 220px;
+	height: auto;
+	float: left;
+}
+
+#recherchePar {
+	margin-left: 20px;
+	width: 50px;
+	float: left;
+}
+
+#inputRechercheRapide {
+	margin-top: 10px;
+	margin-right: -5;
+	height: 15px;
+	width: 245px;
+}
+
+#listeRRapide {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+#resultatRRapide {
+	display: flex;
+	width: 250px;
+	height: 170px;
+}
+
+.legend{
+	text-align: center;
+}
+
+#imageAccueil {
+	float: right;
+	margin-top: 5px;
+	background-image: url('../img/biblio3.png');
+	background-repeat:no-repeat;
+	background-size: cover;
+	width: 490px;
+	height: 600px;
+}
+
+body{
+	background-image: url('../img/biblio1.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
