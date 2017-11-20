@@ -15,9 +15,9 @@ import fr.afpa.biblioteque.model.*;
 
 public class Dao implements IDao {
 
-	private String url = "jdbc:mysql://192.168.1.150:3306/biblioteque";
-	private String login = "root";
-	private String passwd = "SuperAFPA34";
+	private String url = "jdbc:mariadb://192.168.1.150:3307/biblioteque";
+	private String login = "afpa";
+	private String passwd = "SuperAFPA";
 	private Connection connect = null;
 	private Statement statement = null;
 	private ResultSet result = null;
@@ -29,7 +29,7 @@ public class Dao implements IDao {
 	public void init() {
 		// Chargement du Driver
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("org.mariadb.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}

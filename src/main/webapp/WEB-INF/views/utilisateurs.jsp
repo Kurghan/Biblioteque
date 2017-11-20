@@ -21,11 +21,12 @@
 		<div class="groupBoutonsUsers">
 			<a href="<c:url value='/displayListUsers'/>"><input type="button" value="Afficher liste" class="btnUsers"></a><br> <br>
 			<a href="<c:url value='/displayAddUser'/>"><input type="button" value="Nouveau" class="btnUsers"></a><br><br> 
-			<form action ="<c:url value='/deleteUser'/>" method="get">
+			<form action ="<c:url value='/deleteUser'/>" method="get" id="form">
 			<input type="submit" value="Effacer" class="btnUsers"> 
 			<input type="text" id="txtName" name="txtName"></form><br>
-			<form action ="<c:url value='/displayModifyUser'/>" method="get"><br> <input type="submit" value="Modifier" class="btnUsers">
-			<input type="text" id="txtName1" name="txtName1"></form><br>
+			<form action ="<c:url value='/displayModifyUser'/>" method="get" id="form">
+			<br> <input type="submit" value="Modifier" class="btnUsers">
+			<input type="text" id="txtName1" name="txtName1"></form><br><br>
 			<br> <input type="button" value="Historique" class="btnUsers"><br>
 			<br> <input type="button" value="Emprunter" class="btnUsers"><br>
 			<br>

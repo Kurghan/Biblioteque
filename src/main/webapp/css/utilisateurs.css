@@ -16,10 +16,10 @@
 }
 
 .btnUsers {
-	float: right;
+	float: left;
 	width: 90px;
 	height: 20px;
-	margin-left: 10px;
+	margin-left: 60px;
 }
 
 #RRapide {
@@ -39,6 +39,7 @@
 	width: 150px;
 	height: auto;
 	float: left;
+	
 }
 
 .groupBoutonsUsers {
@@ -81,7 +82,7 @@
 	margin-top: 40px;
 	border-style: solid;
 	border-width: 1px;
-	height: 560px;
+	height: 570px;
 	width: 490px;
 }
 
@@ -143,10 +144,17 @@ table, td, th {
 	width: 30px;
 	height: 10px;
 	visibility: hidden;
+	float: left;
 }
 
 #txtName1{
 	width: 30px;
 	height: 10px;
 	visibility: hidden;
+	float: left;
+}
+
+#form{
+	width: 0px;
+	height: 0px;
 }
