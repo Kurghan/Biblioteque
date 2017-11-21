@@ -325,6 +325,29 @@ public class Dao implements IDao {
 		}
 
 	}
+	
+	public void ModifyEmprunteur(Utilisateur emprunteur) {
+		try {
+			// Récupération de la connexion
+			connect = DriverManager.getConnection(url, login, passwd);
+			// Création du statement
+			System.out.println(emprunteur);
+			statement = connect.createStatement();
+			String query = "update biblioteque.abonne , biblioteque.personne set nomPersonne = '" + emprunteur.getNom()
+					+ "', prenomPersonne = '" + emprunteur.getPrenom() + "' , numTelephone = "
+					+ emprunteur.getNumTelephone()
+					+ " where abonne.idPersonne = personne.idPersonne and personne.idPersonne = '"
+					+ emprunteur.getNumeroAbonne() + "'";
+			statement.executeUpdate(query);
+			statement.close();
+			connect.close();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+	}
+
 
 	public void modifyAuteur(Auteur auteur) {
 		try {
@@ -389,28 +412,6 @@ public class Dao implements IDao {
 			e.printStackTrace();
 		}
 		return listeAuteur;
-
-	}
-
-	public void ModifyEmprunteur(Utilisateur emprunteur) {
-		try {
-			// Récupération de la connexion
-			connect = DriverManager.getConnection(url, login, passwd);
-			// Création du statement
-			System.out.println(emprunteur);
-			statement = connect.createStatement();
-			String query = "update biblioteque.abonne , biblioteque.personne set nomPersonne = '" + emprunteur.getNom()
-					+ "', prenomPersonne = '" + emprunteur.getPrenom() + "' , numTelephone = "
-					+ emprunteur.getNumTelephone()
-					+ " where abonne.idPersonne = personne.idPersonne and personne.idPersonne = '"
-					+ emprunteur.getNumeroAbonne() + "'";
-			statement.executeUpdate(query);
-			statement.close();
-			connect.close();
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
 
 	}
 
